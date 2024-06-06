@@ -1,0 +1,39 @@
+/* carrossel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#carouselExample {
+    width: 70%;
+    margin: auto; 
+}
+
+/* infos */
+#info{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 30px;
+    justify-content: center;
+    gap: 50px;
+}
+
+#info h2{
+    text-align: center;
+}
+
+#contato{
+    margin-left: 50px;
+}
+
+.list-group {
+    margin-top: 70px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
