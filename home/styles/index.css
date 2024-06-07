@@ -1,3 +1,16 @@
+:root{
+    --main: #F8E8D8;
+    --tiki: #C8684D;
+    --moon: #F4EFED;
+    --merlot: #7f171f;
+    --dive: #027a76;
+    --links: #AD5058;
+
+}
+
+
+
+
 /* carrossel */
 .carousel-container {
     display: flex;
@@ -15,21 +28,31 @@
 #info{
     display: flex;
     flex-direction: row;
-    margin: 50px 30px;
+    margin: 70px 30px;
     justify-content: center;
     gap: 50px;
 }
 
 #info h2{
     text-align: center;
+    color: var(--merlot);
 }
 
 #contato{
     margin-left: 50px;
+    
+}
+
+.contato-info{
+    font-size: 17px;
 }
 
 .list-group {
     margin-top: 70px;
+}
+
+#insta{
+    color: var(--dive);
 }
 
 .icon{

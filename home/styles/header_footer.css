@@ -1,0 +1,30 @@
+/* header */
+:root{
+    --main: #F8E8D8;
+    --tiki: #C8684D;
+    --moon: #F4EFED;
+    --merlot: #7f171f;
+    --dive: #027a76;
+    --links: #AD5058;
+}
+.nav-a{
+    color: var(--links) !important;
+    margin-top: 20px;
+}
+
+.item-header{
+    font-size: 20px; 
+    font-weight: bold;
+} 
+
+/* footer */
+#submit-btn{
+    background-color: var(--dive);
+    border: var(--dive);
+}
+
+#form5Example22{
+    background-color:  #7f171f;
+    border: #C8684D;
+}
+
