@@ -13,6 +13,14 @@
     --dive: #027a76;
     --links: #AD5058;
   }
+  @font-face {
+    font-family:principal;
+    src: url(../../fonts/Limelight/Limelight-Regular.ttf);
+}
+@font-face {
+    font-family:body;
+    src: url(../../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
   
   body {
     background: var(--light-bg);
@@ -34,6 +42,7 @@
   
   .description {
     white-space: wrap;
+    font-family: body;
   }
   
   a {
@@ -85,6 +94,7 @@
   .box-title {
     border-left: 3px solid var(--links);
     padding-left: 12px;
+    font-family: principal;
   }
   
   .user-follow-info {

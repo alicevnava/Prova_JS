@@ -8,6 +8,14 @@
 
 }
 
+@font-face {
+    font-family: principal;
+    src: url(../../fonts/Limelight/Limelight-Regular.ttf);
+}
+@font-face {
+    font-family:body;
+    src: url(../../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
 /* carrossel */
 .carousel-container {
     display: flex;
@@ -31,6 +39,7 @@
     margin: 70px 30px;
     justify-content: center;
     gap: 50px;
+    font-family: body;
 }
 
 #info h2{

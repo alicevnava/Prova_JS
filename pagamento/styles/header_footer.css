@@ -17,6 +17,16 @@
     --dive: #027a76;
     --links: #AD5058;
 }
+
+@font-face {
+    font-family:principal;
+    src: url(../../fonts/Limelight/Limelight-Regular.ttf);
+}
+@font-face {
+    font-family:body;
+    src: url(../../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
 .nav-a{
     color: var(--links) !important;
     margin-top: 20px;
@@ -30,6 +40,7 @@ nav{
     background-color: var(--main);
     padding-bottom: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: principal;
 }
 
 /* footer */
@@ -47,6 +58,7 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
+    font-family: body;
     
 
   }

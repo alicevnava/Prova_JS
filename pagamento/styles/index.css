@@ -6,6 +6,15 @@
     --button-text: #fff;
 }
 
+@font-face {
+    font-family:principal;
+    src: url(../../fonts/Limelight/Limelight-Regular.ttf);
+}
+@font-face {
+    font-family:body;
+    src: url(../../fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--main-bg);
@@ -30,6 +39,7 @@ body {
 
 .text-center-pay {
     text-align: center;
+    font-family: principal;
 }
 
 .form-group {
@@ -40,6 +50,8 @@ label {
     display: block;
     margin-bottom: 5px;
     color: var(--text-color);
+    font-family: body;
+    font-size: 20px;
 }
 
 input, select {
