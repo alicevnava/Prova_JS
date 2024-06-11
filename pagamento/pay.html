@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineSenai</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/header_footer.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <nav id="nav">
+      <ul class="nav nav-underline" style="justify-content: center;">
+        <img src="../imgs/logo.png" alt="logo" style="width: 60px; height: 55px; margin-top: 20px;">
+        <li class="nav-item item-header">
+          <a class="nav-link nav-a" aria-current="page" href="../home/index.html">Home</a>
+        </li>
+        <li class="nav-item item-header">
+          <a class="nav-link nav-a" href="../cronograma/cronograma.html">Sessões</a>
+        </li>
+        <li class="nav-item item-header">
+          <a class="nav-link nav-a" href="../pagamento/pay.html">Pagamento</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+<main>
+    <div class="container-pay">
+      <h2 class="text-center-pay">Pagamento</h2>
+      <form id="payment-form">
+          <div class="form-group">
+              <label for="full-tickets">Ingressos Inteiros</label>
+              <input type="number" id="full-tickets" name="full-tickets" min="0" value="0" required>
+          </div>
+          <div class="form-group">
+              <label for="half-tickets">Meias-Entradas</label>
+              <input type="number" id="half-tickets" name="half-tickets" min="0" value="0" required>
+          </div>
+          <div class="form-group">
+              <label for="payment-method">Método de Pagamento</label>
+              <select id="payment-method" name="payment-method" required>
+                  <option value="" disabled selected>Selecione</option>
+                  <option value="pix">PIX</option>
+                  <option value="credito">Crédito</option>
+                  <option value="debito">Débito</option>
+              </select>
+          </div>
+
+          <div id="qr-pix" style="display: none;">
+            <img src="../imgs/qrcode.png" alt="QR Code PIX" id="img-qrcode">
+          </div>
+          
+          <div id="form-cartao" style="display: none;">
+              <!-- Seu formulário para dados do cartão aqui -->
+              <label for="nome-cartao">Nome no Cartão:</label>
+              <input type="text" id="nome-cartao" name="nome-cartao">
+              <br>
+              <label for="numero-cartao">Número do Cartão:</label>
+              <input type="text" id="numero-cartao" name="numero-cartao">
+              <br>
+              <label for="data-validade">Data de Validade:</label>
+              <input type="text" id="data-validade" name="data-validade">
+              <br>
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv">
+          </div>
+          
+          <div id="total-compra"></div>
+          <button type="submit" class="btn" id="finalizar-compra">
+          <a href="../imgs/ticket.png" target="_blank">Finalizar Compra</a></button>
+      </form>
+  </div>
+</main>
+
+  <!-- rodapé -->
+  <footer class="bg-body-tertiary text-center text-lg-start"
+    style="background-color: #f8e0c7 !important; text-align: center; box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <form action="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-auto mb-4 mb-md-0">
+            <p class="pt-2" style="color: #7f171f;;">
+              <strong>Inscreva-se na nossa newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12 mb-4 mb-md-0">
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="form5Example22" class="form-control" placeholder="seu melhor e-mail" />
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto mb-4 mb-md-0">
+            <!-- Submit button -->
+            <button data-mdb-ripple-init type="button" class="btn btn-primary mb-4 " id="submit-btn">
+              Inscreva-se
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-1" style="background-color: #F8E8D8">
+      © 2024 Copyright: CineSenai
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+
+  <!-- JS -->
+   <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

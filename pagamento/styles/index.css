@@ -1,0 +1,79 @@
+:root {
+    --main-bg: #f4f4f9;
+    --primary-color: #027a76;
+    --text-color: #333;
+    --button-bg: #c8684d;
+    --button-text: #fff;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+}
+
+.container-pay {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 550px;
+}
+
+
+
+.text-center-pay {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+#finalizar-compra{
+    background-color: var(--button-bg);
+    color: var(--main-bg);
+    margin-top: 10px;
+}
+
+
+#img-qrcode{
+    margin-left: 17%;
+}
