@@ -116,7 +116,30 @@
     background: var(--dive);
   }
   
+/* modal */
+.horario{
+  display: flex; 
+  gap: 20px;
+}
 
+.close{
+  margin-left: 350px;
+}
+
+.btn-primary{ 
+  background-color: transparent !important;
+  border: 1px solid;
+  border-color: var(--links) !important;
+  color: var(--merlot) !important;
+  padding: 15px !important;
+  font-size: 18px !important;
+  transition: background-color 0.3s, color 0.3s !important;
+}
+
+.btn-primary:hover{
+  background-color: var(--links) !important;
+  color: var(--moon)!important;
+}
   /* RESPONSIVE QUERIES */
   
   @media (min-width: 320px) {

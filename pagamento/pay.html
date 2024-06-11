@@ -30,16 +30,16 @@
     </nav>
   </header>
 
-<main>
-    <div class="container-pay">
+<main style="display: flex; justify-content: center;">
+    <div class="container-pay" >
       <h2 class="text-center-pay">Pagamento</h2>
       <form id="payment-form">
           <div class="form-group">
-              <label for="full-tickets">Ingressos Inteiros</label>
+              <label for="full-tickets">Ingressos Inteiros (R$40,00)</label>
               <input type="number" id="full-tickets" name="full-tickets" min="0" value="0" required>
           </div>
           <div class="form-group">
-              <label for="half-tickets">Meias-Entradas</label>
+              <label for="half-tickets">Meias-Entradas (R$20,00)</label>
               <input type="number" id="half-tickets" name="half-tickets" min="0" value="0" required>
           </div>
           <div class="form-group">
@@ -73,14 +73,14 @@
           
           <div id="total-compra"></div>
           <button type="submit" class="btn" id="finalizar-compra">
-          <a href="../imgs/ticket.png" target="_blank">Finalizar Compra</a></button>
+          <a href="ticket.html" target="_blank" id="ticket">Finalizar Compra</a></button>
       </form>
   </div>
 </main>
 
   <!-- rodapé -->
   <footer class="bg-body-tertiary text-center text-lg-start"
-    style="background-color: #f8e0c7 !important; text-align: center; box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);">
+    style="background-color: #f8e0c7 !important; text-align: center; box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); ;">
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <form action="">

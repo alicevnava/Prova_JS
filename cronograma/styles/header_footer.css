@@ -26,6 +26,7 @@ nav{
 #submit-btn{
     background-color: var(--dive);
     border: var(--dive);
+    color: var(--main);
 }
 
 footer .container{

@@ -7,6 +7,15 @@
     --dive: #027a76;
     --links: #AD5058;
   }
+
+body{
+    background-color: var(--moon);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
 .cinema-layout {
     text-align: center;
 }
@@ -68,4 +77,31 @@
 #div-btn{
     display: flex;
     justify-content: center;
+}
+
+#precos{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.ingresso{
+    font-size: 20px;
+    color: var(--merlot);
+
+}
+#valores{
+    color: var(--links);
+
+}
+
+#buttons{
+    margin-left: 900px;
+
 }
